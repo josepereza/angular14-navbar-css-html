@@ -1,0 +1,28 @@
+<nav class="navbar">
+  <span (click)="barras=!barras" id="navbar-toggle" 
+  >
+      <i *ngIf="!barras" class="fa-solid fa-bars"></i>
+      <i *ngIf="barras" class="fa-solid fa-x"></i>
+  </span>
+  <a href="#" id="logo">logo</a>
+  <ul (click)="pato()" [ngStyle]="{'barras': true ? 'display' : 'none' }" [ngClass]="{'main-nav':!barras}">
+      <li>
+          <a href="#" class="nav-links">Home</a>
+      </li>
+      <li>
+          <a href="#" class="nav-links">Products</a>
+      </li>
+      <li>
+          <a href="#" class="nav-links">About Us</a>
+      </li>
+      <li>
+          <a href="#" class="nav-links">Contact Us</a>
+      </li>
+      <li>
+          <a href="#" class="nav-links">Blog</a>
+      </li>
+  </ul>
+</nav>
+<div class="container">
+
+</div>
